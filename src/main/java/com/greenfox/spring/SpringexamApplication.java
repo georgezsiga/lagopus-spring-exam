@@ -1,5 +1,6 @@
 package com.greenfox.spring;
 
+import com.greenfox.spring.Model.Answer;
 import com.greenfox.spring.Model.Question;
 import com.greenfox.spring.Repository.AnswerRepository;
 import com.greenfox.spring.Repository.QuestionRepository;
@@ -23,7 +24,13 @@ public class SpringexamApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-	  
-
+	  answerRepository.save(new Answer("2017.03.13"));
+	  answerRepository.save(new Answer("Whippet"));
+	  answerRepository.save(new Answer("Green"));
+	  answerRepository.save(new Answer("4"));
+	  answerRepository.save(new Answer("16"));
+	  answerRepository.save(new Answer("Vulpes"));
+	  answerRepository.save(new Answer("~3300"));
+	  answerRepository.save(new Answer("Libra"));
 	}
 }
