@@ -1,8 +1,7 @@
 package com.greenfox.spring.Repository;
 
 import com.greenfox.spring.Model.Question;
-import java.util.ArrayList;
-import org.springframework.data.jpa.repository.Query;
+
 import org.springframework.data.repository.CrudRepository;
 
 /**
@@ -10,10 +9,10 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface QuestionRepository extends CrudRepository<Question, Long> {
 
-  @Query ("SELECT question FROM Question ORDER BY RAND() LIMIT 5")
-  ArrayList<Question> findAllByQuestion();
+//  @Query ("SELECT question FROM Question ORDER BY RAND() LIMIT 5")
+//  Iterable<Question> findTop5By();
 
-  ArrayList<Question> findTop5ByQuestion();
+  Iterable<Question> findTop5By();
 
-
+  Iterable<Question> findAllBy();
 }
