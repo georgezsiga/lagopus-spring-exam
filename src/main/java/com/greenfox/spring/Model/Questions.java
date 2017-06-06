@@ -9,9 +9,9 @@ public class Questions {
 
 
   int id;
-  ArrayList<Question> questions;
+  Iterable<Question> questions;
 
-  public Questions(ArrayList<Question> questions) {
+  public Questions(Iterable<Question> questions) {
     this.id = 1;
     this.questions = questions;
   }
@@ -24,11 +24,11 @@ public class Questions {
     this.id = id;
   }
 
-  public ArrayList<Question> getQuestions() {
+  public Iterable<Question> getQuestions() {
     return questions;
   }
 
-  public void setQuestions(ArrayList<Question> questions) {
+  public void setQuestions(Iterable<Question> questions) {
     this.questions = questions;
   }
 }
