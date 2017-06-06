@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class RestController {
 
   @Autowired
-  QuestionRepository questionRepository;
+  private QuestionRepository questionRepository;
 
   @GetMapping("/questions")
   public Questions questions() {
-    return new Questions(questionRepository.findTop5ByQuestion());
+    return new Questions(questionRepository.findAll());
   }
 
 }
