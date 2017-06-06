@@ -1,24 +1,28 @@
 package com.greenfox.spring.Model;
 
+import java.util.ArrayList;
+
+
 /**
  * Created by georgezsiga on 6/6/17.
  */
 public class ProjectList {
 
-  Iterable<Project> projectList;
+  ArrayList<Project> projectList;
 
   public ProjectList() {
+    this.projectList = new ArrayList<Project>();
   }
 
-  public ProjectList(Iterable<Project> projectList) {
+  public ProjectList(ArrayList<Project> projectList) {
     this.projectList = projectList;
   }
 
-  public Iterable<Project> getProjectList() {
+  public ArrayList<Project> getProjectList() {
     return projectList;
   }
 
-  public void setProjectList(Iterable<Project> projectList) {
+  public void setProjectList(ArrayList<Project> projectList) {
     this.projectList = projectList;
   }
 }
