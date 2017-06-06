@@ -1,14 +1,16 @@
 package com.greenfox.spring.Model;
 
+import java.util.ArrayList;
+
 /**
  * Created by georgezsiga on 6/6/17.
  */
 public class Answers {
 
   int id;
-  Iterable<Answer> answers;
+  ArrayList<Answer> answers;
 
-  public Answers(Iterable<Answer> answers) {
+  public Answers(ArrayList<Answer> answers) {
     this.id = 1;
     this.answers = answers;
   }
@@ -21,11 +23,11 @@ public class Answers {
     this.id = id;
   }
 
-  public Iterable<Answer> getAnswers() {
+  public ArrayList<Answer> getAnswers() {
     return answers;
   }
 
-  public void setAnswers(Iterable<Answer> answers) {
+  public void setAnswers(ArrayList<Answer> answers) {
     this.answers = answers;
   }
 }
