@@ -106,15 +106,16 @@ Your task is to create a RESTful quiz application with full of greenfox question
 
 Please define it with your own words. We are expecting at least 3 distinct ideas that you write here:
 
+I would use abstrack class over an interface if I want to share code among several closely related classes. Or if the classes that extend the abstract class has many common methods or fields. Or if they require access modifiers other than public. Like protected or private. Or if I want to declare non-static or non final fields. With this I can define methods that can access and modify the state of the object what are they belong to.
 
 ### Analyzing URL
 Please name the parts of the URL below.
 [<img src="assets/URLanalysis.png" alt="parts of URL" />](assets/URLanalysis.png?raw=true)
 
-1:  
-2:  
-3:  
-4:  
-5:  
-6:  
-7:  
+1: protocol 
+2: subdomain 
+3: domain name 
+4: port 
+5: path 
+6: query 
+7: parameters

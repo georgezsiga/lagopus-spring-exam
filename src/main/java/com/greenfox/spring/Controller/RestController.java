@@ -14,9 +14,9 @@ public class RestController {
   @Autowired
   QuestionRepository questionRepository;
 
-  @GetMapping("/questions")
-  public Questions questions() {
-    return questions;
-  }
+//  @GetMapping("/questions")
+//  public Questions questions() {
+//    return questions;
+//  }
 
 }
