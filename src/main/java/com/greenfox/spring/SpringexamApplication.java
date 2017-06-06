@@ -13,10 +13,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringexamApplication implements CommandLineRunner{
 
 	@Autowired
-	QuestionRepository questionRepository;
+	private QuestionRepository questionRepository;
 
 	@Autowired
-  AnswerRepository answerRepository;
+  private AnswerRepository answerRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringexamApplication.class, args);
